@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pickle
 import joblib
 
-xgboost_pipeline = joblib.load("./models/encoding_xgboost.pkl")
+xgboost_pipeline = joblib.load("./models/xgboost_upsampled_organized.pkl")
     
 with open("./data/interim/feature_values.pkl", "rb") as f:
     loaded_list = pickle.load(f)
